@@ -12,12 +12,7 @@ $ gradle clean test -Pdriver=firefox
 
 The test results will be recorded in the `target/site/serenity` directory.
 # ssh to box
-ssh ubuntu@10.21.33.145
-# password
-password: rxm8Z6JbwfwCw38
-username: admin
-Jenkins
-/usr/lib/systemd/system/jenkins.service
+
 
 command to start jenkins 
  cd to war location fromm above file and
