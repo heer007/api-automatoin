@@ -35,28 +35,3 @@ https://serenity-bdd.github.io/theserenitybook/latest/serenity-screenplay-rest.h
 #GraphQL
 https://applitools.com/blog/writing-tests-graphql-apis-rest-assured/
 
-#Fix for CORS issue in JENKINS
-System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
-System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "default-src 'self'; style-src 'self' 'unsafe-inline';")
-System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';")
-
-#urls
-https://api.testnet.zestbloom.com/ion/graphql
-https://www.notion.so/58e287c772904cc8b12ba8ba877a7eab?v=e01243163f334d87a17dbbcc7160b982       
-https://ion.testnet.zestbloom.com/docs#/assets/get_assets_assets__network___get 
-
-
-#Image Search code
-curl --request GET \
---url 'https://zestbloom-image-search-api.p.rapidapi.com/v1/search?limit=32&q=sauce&network=algo&showNsfw=false' \
---header 'X-RapidAPI-Host: zestbloom-image-search-api.p.rapidapi.com' \
---header 'X-RapidAPI-Key: 2db187e986msh875835bb365f226p1ef17ajsn593a61a2f032'
-=======
-#zestbloom search api
-curl --request GET \
---url 'https://zestbloom-image-search-api.p.rapidapi.com/v1/search?limit=32&q=sauce&network=algo&showNsfw=false' \
---header 'X-RapidAPI-Host: zestbloom-image-search-api.p.rapidapi.com' \
---header 'X-RapidAPI-Key: 2db187e986msh875835bb365f226p1ef17ajsn593a61a2f032'
-
-# Search API web page
-https://rapidapi.com/zestbloom-inc-zestbloom-inc-default/api/zestbloom-image-search-api
