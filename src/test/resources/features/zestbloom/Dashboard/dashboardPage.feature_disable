@@ -1,0 +1,32 @@
+@All @DashboardTest
+
+Feature: Dashboard test
+
+  The purpose of the feature
+  is to make sure
+  that user is able to navigate and perform some operations
+
+
+  Scenario: Verify that user is able to update Basic Information
+    Given user is on landing page
+    And user click on "Sign In/Sign Up" button
+    And user enter username "heer@heersoftware.com" and password as "At1234$$" and click Login button
+    Then home page is displayed
+    When user click on Profile icon
+    And select "Profile Settings" from the menu
+    Then "Profile Settings" page loads
+    When user fill the form to update the Basic Information
+      | First Name | Heer+RANDOM |
+      | Last Name  | Heer+RANDOM |
+      | Bio        | QA testing+RANDOM |
+    And user click on "Save" button
+    Then "My Profile" page loads
+    And user can see the Basic Information successfully updated
+
+
+
+
+
+
+
+

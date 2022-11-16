@@ -1,0 +1,22 @@
+@All @LoginTest
+
+Feature: Login test
+
+
+  The purpose of the feature
+  is to make sure
+  that user is able to login with valid user id and password
+
+
+  Scenario: Verify that user is able to Login to account by clicking the login button
+    Given user is on landing page
+    And user click on "Sign In/Sign Up" button
+    And user enter username "heer@heersoftware.com" and password as "At1234$$" and click Login button
+    Then home page is displayed
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+@All @AssetApiTest
+Feature: upload image
+
+  Scenario: Upload  Search Image
+    When upload image and verify its uploaded successfully

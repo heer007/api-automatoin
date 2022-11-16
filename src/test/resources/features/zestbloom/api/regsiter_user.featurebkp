@@ -1,0 +1,23 @@
+@All @RegisterTest
+
+Feature: Register user test
+
+
+  The purpose of the feature
+  is to make sure
+  that user is able to register
+
+  Scenario: Verify that user is able to register on site
+    Given make a request to create a user
+    And user open the "https://yopmail.com/" in tab
+    And user type the registered email into the input field
+    And user click on Check Inbox button
+    Then user can see the "ZestBloom: Sign Up" email
+    And user click on "Verify" button to verify email
+    Then user can see "Activation Completed!" popup
+    And user click on "Done" button
+    And user click on "Sign In/Sign Up" button
+    And user try to Login using registered Email and password
+    Then home page is displayed
+
+
